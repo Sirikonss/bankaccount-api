@@ -1,5 +1,5 @@
 FROM maven:3.6.1-jdk-8
-WORKDIR /usr/bankaccount
+WORKDIR /usr/bankaccount-api
 COPY pom.xml .
 RUN mvn -B dependency:resolve dependency:resolve-plugins
 COPY src ./src/
